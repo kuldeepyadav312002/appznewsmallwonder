@@ -1,0 +1,11 @@
+<app-text-info-block [title]="' ABOUT US'" [text]="text"></app-text-info-block>
+
+<div class="glance-component">
+  <div class="rocketImage"></div>
+  <div class="container">
+    <h3>At a Glance</h3>
+    <app-video [urls]="aboutUsVideoUrls | safe "></app-video>
+  </div>
+</div>
+<!--<app-image-card-text [image]="image" [content]="imageCardContent"></app-image-card-text>-->
+<app-more-to-explore [imageList]="imageList"></app-more-to-explore>

@@ -1,0 +1,69 @@
+@import "../../../../assets/styles/variables.scss";
+
+.page-break-section {
+  width: 100%;
+  padding: 3em 0;
+  background: url("/assets/img/home-page-break-bg.png") no-repeat bottom;
+  background-size: cover;
+  position: relative;
+
+  h3,
+  h2, h4 {
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: "Nunito", sans-serif;
+  }
+}
+
+.pb_img_2 {
+  background: url("/assets/img/bg-widget-2.png") no-repeat;
+  width: 83px;
+  height: 54px;
+  position: absolute;
+  left: 15%;
+  bottom: 15%;
+}
+
+.pb_img_3 {
+  background: url("/assets/img/bg-widget-3.png") no-repeat;
+  width: 76px;
+  height: 58px;
+  position: absolute;
+  right: 0%;
+  top: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+  .pb_img_2 {
+    left: 5%;
+    bottom: 10%;
+    top: unset;
+  }
+
+  .pb_img_3 {
+    bottom: 15%;
+    right: 5%;
+    top: unset;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+  .page-break-section {
+    h3, h2, h4 {
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .page-break-section {
+    h3, h2, h4 {
+      font-size: 1.1em;
+    }
+  }
+}

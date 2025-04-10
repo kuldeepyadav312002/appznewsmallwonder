@@ -1,0 +1,11 @@
+@import "../../../assets/styles/variables.scss";
+
+.card-image-custom {
+  height: 15em;
+}
+
+.card-title {
+  color: $button-primary;
+  margin-bottom: 0;
+  font-weight: 700;
+}

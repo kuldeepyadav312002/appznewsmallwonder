@@ -1,0 +1,100 @@
+@import "../../../../assets/styles/variables";
+
+.learning-block {
+  width: 100%;
+  padding: 2em 0;
+  border-bottom: 1px solid $background-light-grey;
+  background: $background-primary-light;
+}
+
+.heading {
+  color: #8a2b3d;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.learning-block-bullets {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bullet-points {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+  border: 3px solid;
+  padding: 5px;
+
+  p {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .bullet-points {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bullet-points {
+    width: 130px;
+    height: 130px;
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  .learning-block {
+    padding: 1em 0;
+    .container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .bullet-points {
+    width: 100px;
+    height: 90px;
+    margin-top: 7px;
+    font-size: 0.8em;
+  }
+
+  .learning-block {
+    .col-md-9 {
+      font-size: 1em;
+    }
+    .heading {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .bullet-points {
+    width: 90px;
+    height: 80px;
+    margin-top: 4px;
+    font-size: 0.75em;
+  }
+  .learning-block {
+    .col-md-9 {
+      font-size: 0.8em;
+    }
+
+    .heading {
+      font-size: 1.25em;
+    }
+  }
+}

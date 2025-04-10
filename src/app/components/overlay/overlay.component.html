@@ -1,0 +1,20 @@
+<!-- <button
+  type="button"
+  class="btn btn-primary relative waves-light"
+  (click)="showModal()"
+>
+  Launch demo modal
+</button> -->
+<div class="overlay" *ngIf="show">
+  <div class="overlay__content">
+    <button class="btn-close" (click)="handleClose()">
+      <i class="fa fa-close"></i>
+    </button>
+    <div class="overlay__header">
+      <span class="overlay__header__title">{{ title }}</span>
+    </div>
+    <div class="overlay__body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

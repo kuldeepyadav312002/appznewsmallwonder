@@ -1,0 +1,354 @@
+@import "../../../../assets/styles/variables.scss";
+
+swiper {
+  width: 100%;
+  height: 100%;
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    // background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+  }
+
+  .swiper-slide::before {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      360deg,
+      rgba(2, 0, 36, 0.48923319327731096) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 10px;
+  }
+
+  .title {
+    position: absolute;
+    bottom: 25px !important;
+    left: 10px !important;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    // transform: rotate(-90deg);
+    // transform-origin: 0 0;
+    transform-origin: 0 0;
+    // white-space: nowrap;
+
+    // position: absolute;
+    //   bottom: 10px;
+    //   color: white;
+    //   font-weight: bold;
+    //   transform: rotate(-90deg);
+    //   display: block;
+    //   width: 100%;
+    //   /* height: 100%; */
+    //   white-space: nowrap;
+  }
+
+  .swiper-slide:nth-child(n) {
+    width: 100px;
+  }
+
+  .swiper-slide-active {
+    width: 300px !important;
+
+    .title {
+      white-space: unset;
+      transform: rotate(0deg);
+      transform-origin: unset;
+    }
+  }
+}
+
+.curs-left-btn {
+  img{
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  swiper .title {
+    left: 28px;
+    bottom: -19px;
+  }
+  .jumbo-tran-animation {
+    padding-right: 0px;
+  }
+  .curs-left-btn {
+    display: none;
+  }
+  .swiper-slide-active {
+    width: 300px !important;
+
+    .title {
+      white-space: unset;
+      // transform: rotate(0deg);
+      transform-origin: unset;
+      width: calc(100% - 46px);
+      left: 0;
+      bottom: 10px;
+    }
+    .curs-left-btn {
+      right: 0;
+      display: block;
+    }
+  }
+  .title {
+    font-size: 13px;
+  }
+}
+.home-curr-section {
+  .header {
+    font-size: 50px;
+    color: $theme-blue;
+    font-weight: bold;
+    text-align: justify;
+  }
+
+  .curr-content {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home-curr-section {
+    margin-top: 50px !important;
+    margin-bottom: 40px !important;
+
+  }
+  .titleText {
+    display: flex;
+    align-items: justify;
+    text-align: justify;
+  }
+  swiper {
+    .swiper-slide {
+      height: 300px;
+      // width: 150px;
+    }
+
+    .swiper-slide-active {
+      width: 200px !important;
+    }
+    .swiper-slide:nth-child(n) {
+      width: 50px;
+    }
+    .title {
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .home-curr-section {
+    .header {
+      font-size: 30px !important;
+    }
+
+    .curr-content {
+      font-size: 12px;
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  .heading {
+    font-size: 30px !important;
+  }
+
+  .curi-mob .container {
+    max-width: 100% !important;
+  }
+
+  .curi-description {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.curri-h {
+  font-size: 55px !important;
+  font-weight: 700 !important;
+  color: #12053b !important;
+}
+.cuuri-p {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 0px !important;
+}
+.home-curr-section {
+  margin-top: 100px;
+  margin-bottom: 40px !important;
+}
+h1 {
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  color: #0a033c;
+}
+.btt-4 {
+  background: #b4874c !important;
+  border: 1px solid #b4874c;
+  border-radius: 50px;
+  padding: 12px 20px;
+  color: #fff;
+}
+
+.curs-img {
+  width: 100%;
+  height: 417px;
+  // margin-top: 40px;
+}
+
+// p{
+//   color: #5f5f5f !important;
+//   font-size: 18px !important;
+//   font-family: 'Poppins', sans-serif;
+// }
+.curs-img2 {
+  width: 100%;
+  height: 200px;
+}
+
+.curr-box a {
+  position: relative;
+}
+
+.curr-box a {
+  display: block;
+}
+
+.curs {
+  position: absolute;
+  bottom: 5px;
+}
+
+.curs-left {
+  display: flex !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  font-weight: 600;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 1;
+  bottom: 10px;
+  // margin-top: -65px;
+  padding-left: 10px;
+}
+.curs-left2 {
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 1;
+  bottom: 10px;
+  // margin-top: -50px;
+  align-items: center;
+  padding-left: 10px;
+}
+.curi-icon {
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cur-des {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+// .home-curr-section {
+//   margin-top: 3em;
+//   width: 100%;
+//   padding: 3em 0;
+//   background: $background-primary-light;
+// }
+
+// .title_sec {
+//   text-align: center;
+//   margin: 0 0 2em;
+
+//   p {
+//     margin: 0;
+//     color: $button-primary;
+//     font-size: 25px;
+//     line-height: 20px;
+//     font-family: Shadows Into Light Two, cursive;
+//   }
+// }
+
+// ::ng-deep .nav-btn {
+//   height: 41px !important;
+//   width: 41px !important;
+// }
+// ::ng-deep .prev-slide.slick-disabled,
+// .next-slide.slick-disabled {
+//   pointer-events: none;
+//   opacity: 0.5;
+// }
+// ::ng-deep .prev-slide,
+// ::ng-deep .next-slide {
+//   font-size: 0;
+//   line-height: 0;
+//   position: absolute;
+//   top: 50%;
+//   display: block;
+//   width: 20px;
+//   height: 20px;
+//   padding: 0;
+//   transform: translateY(-50%);
+//   cursor: pointer;
+//   border: none;
+// }
+
+// ::ng-deep .prev-slide {
+//   background: url(/assets/img/prev-item.png) no-repeat;
+//   left: -50px !important;
+// }
+// ::ng-deep .next-slide {
+//   background: url(/assets/img/next-item.png) no-repeat;
+//   right: -50px !important;
+// }
+
+@media only screen and (min-width: 275px) and (max-width: 1024px) {
+  .cur-des {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .curi-mob {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .curs-left-btn {
+    color: #fff !important;
+    font-size: 18px !important;
+    position: absolute;
+    font-weight: 600;
+    justify-content: space-between;
+    z-index: 1;
+    margin-top: 270px;
+    padding-left: 10px;
+  }
+  .curs-left-btn {
+    display: block !important;
+  }
+}
+.swiper-wrapper {
+  transition-duration: 0ms;
+  transform: unset !important;
+}

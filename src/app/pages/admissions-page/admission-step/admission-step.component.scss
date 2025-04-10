@@ -1,0 +1,63 @@
+@import "../../../../assets/styles/variables.scss";
+
+.admission-step-section {
+  padding: 3em 0;
+  width: 100%;
+
+  h4 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: $button-primary;
+    font-weight: 700;
+  }
+}
+
+.borderLine {
+  border-bottom: 1px solid $button-primary;
+  width: 10%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .admission-step-section {
+    padding: 0.5em 0;
+
+    p {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .admission-step-section {
+    .section-title, h2, h4 {
+      font-size: 1.4em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+  li {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .admission-step-section {
+    .section-title, h2, h4 {
+      font-size: 1.2em;
+    }
+
+    p {
+      font-size: 0.8em;
+    }
+  }
+  li {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,16 @@
+<div
+  class="admission-step-section"
+  [ngStyle]="{
+    'background-color': getColor()
+  }"
+>
+  <div class="container">
+    <h4>Step {{ step }}:</h4>
+    <h2>{{ title }}</h2>
+    <div class="borderLine mb-3"></div>
+    <p>{{ content }}</p>
+    <ul *ngIf="bulletList">
+      <li *ngFor="let item of bulletList">{{ item }}</li>
+    </ul>
+  </div>
+</div>

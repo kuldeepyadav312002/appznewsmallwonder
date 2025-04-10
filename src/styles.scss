@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+@import "./assets/styles/generic-styles.scss";
+
+.home_slide .slick-slide img {
+  display: block;
+  width: 111% !important;
+  margin: auto;
+  
+}
+
+.body-overflow {
+  overflow-y: hidden !important;
+}
+
+@media (max-width: 991px) {
+  .top-h {
+    padding-top: 20px !important;
+  }
+
+  .home_slide .slick-slide img {
+    display: block;
+    width: 125% !important;
+    margin: auto;
+    margin-right: 74px;
+    margin-left: -20px;
+  }
+}

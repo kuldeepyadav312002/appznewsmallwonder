@@ -1,0 +1,28 @@
+.para{
+    font-size: 18px !important;
+    font-weight: 400;
+    color: #5F5F5F;
+  }
+
+
+.act-box3{
+  // position: absolute;
+  width: 90%;
+  height: 150px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.act-box3:hover{
+  height: 250px;
+  margin-top: -150px;
+}
+
+
+@media (max-width: 1024px){
+  .act-h1{
+    font-size: 30px !important;
+    padding: 10px 0;
+  }
+}

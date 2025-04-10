@@ -1,0 +1,130 @@
+<div id="header-container">
+  <div>
+    <div class="container navbg">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand header-logo" [routerLink]="['/']">
+            <img src="../../../assets/image/footer-logo.svg">
+          </a>
+
+          <!-- Responsive -->
+          <!-- <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span (click)="showdiv()" class="navbar-toggler-icon"></span>
+          </button>
+          <div [hidden]="isDivHidden" class="collapse navbar-collapse navbar-collapse-custom text-left text-lg-center"
+            id="navbarSupportedContent">
+            <div class="navbar-toggler px-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <div>
+              <span class="close-me" data-bs-toggle="collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/icons/icon-close.svg" (click)="hideDiv()" alt="">
+              </span>
+              <span class="cbse-text">CBSE affiliated</span>
+              </div>
+              <ul class="navbar-nav ms-auto mt-4 mb-lg-0 ">
+                <li class="nav-item py-2">
+                  <a [routerLink]="['/']" [ngClass]="{'active-link': router.url == '/'}" (click)="onClickNav()"
+                    class="nav-link mx-lg-3" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item py-2">
+                  <a [routerLink]="['/about-us']" [ngClass]="{'active-link': router.url === '/about-us'}"
+                    (click)="onClickNav()" class="nav-link mx-lg-3" aria-current="page">About Us</a>
+                </li>
+                <li class="nav-item py-2">
+                  <a [routerLink]="['/curriculum']" [ngClass]="{'active-link': router.url == '/curriculum'}"
+                    (click)="onClickNav()" class="nav-link mx-lg-3" aria-current="page">Curriculum</a>
+                </li>
+                <li class="nav-item py-2">
+                  <a [routerLink]="['/admissions']" [ngClass]="{'active-link': router.url == '/admissions'}"
+                    (click)="onClickNav()" class="nav-link mx-lg-3" aria-current="page">Admissions</a>
+                </li>
+
+                <li class="nav-item py-2">
+                  <a [routerLink]="['/schedule-tour']" [ngClass]="{'active-link': router.url == '/schedule-tour'}"
+                    (click)="onClickNav()" class="nav-link mx-lg-3" aria-current="page">Schedule a Tour</a>
+                </li>
+
+                <li class="nav-item py-2">
+                  <a [routerLink]="['/activities']" [ngClass]="{'active-link': router.url == '/activities'}"
+                    (click)="onClickNav()" class="nav-link mx-lg-3" aria-current="page">Activities</a>
+                </li>
+
+                <li class="nav-item py-2">
+                  <a [routerLink]="['/books-and-beyond']" [ngClass]="{'active-link': router.url == '/books-and-beyond'}"
+                    (click)="onClickNav()" class="nav-link mx-lg-3" aria-current="page">Pedagogy</a>
+                </li>
+                <li class="nav-item py-2">
+                  <a [routerLink]="['/contact-form']" [ngClass]="{'active-link': router.url == '/contact-form'}"
+                    (click)="onClickNav()" class="nav-link mx-lg-3" aria-current="page">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Ends Responsive -->
+
+          <ul class="navbar-nav nav-bar-lg ms-auto mb-2 mb-lg-0 navbg">
+            <li class="nav-item">
+              <a [routerLink]="['/']" [ngClass]="{'active-link': router.url == '/'}" class="nav-link mx-lg-1"
+                aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/about-us']" [ngClass]="{'active-link': router.url === '/about-us'}"
+                class="nav-link mx-lg-1" aria-current="page">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/curriculum']" [ngClass]="{'active-link': router.url == '/curriculum'}"
+                class="nav-link mx-lg-1" aria-current="page">Curriculum</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/admissions']" [ngClass]="{'active-link': router.url == '/admissions'}"
+                class="nav-link mx-lg-1" aria-current="page">Admissions</a>
+            </li>
+
+            <li class="nav-item">
+              <a [routerLink]="['/schedule-tour']" [ngClass]="{'active-link': router.url == '/schedule-tour'}"
+                class="nav-link mx-lg-1" aria-current="page">Schedule a Tour</a>
+            </li>
+
+            <li class="nav-item">
+              <a [routerLink]="['/activities']" [ngClass]="{'active-link': router.url == '/activities'}"
+                class="nav-link mx-lg-1" aria-current="page">Activities</a>
+            </li>
+
+            <li class="nav-item">
+              <a [routerLink]="['/books-and-beyond']" [ngClass]="{'active-link': router.url == '/books-and-beyond'}"
+                class="nav-link mx-lg-1" aria-current="page">Pedagogy</a>
+            </li>
+
+            <li class="nav-item mx-lg-1">
+              <button type="button" class="shadow-lg btn btn-primary btn-rounded px-lg-4 py-lg-2 contact-us"
+                (click)="navigateToContact()">Contact us</button>
+            </li>
+          </ul>
+        </div>
+
+
+      </nav>
+      <!-- header image for about page only -->
+      <!-- <ng-container *ngIf="currentUrl=='about-us'">
+    <img src="../../../assets/image/abc.png" alt="" class="about-bg">
+  </ng-container> -->
+
+      <!-- header image for contact page only -->
+
+      <!-- <ng-container *ngIf="currentUrl=='contact-form'">
+
+    <img src="../../../assets/image/abc12.png" alt="">
+  </ng-container> -->
+    </div>
+  </div>
+</div>

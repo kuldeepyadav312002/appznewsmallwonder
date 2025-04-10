@@ -1,0 +1,135 @@
+.sliden{
+  margin-top:40px;
+  width: 700px;
+}
+
+.jumbo-tran-animation {
+  background-image: url(../../../assets/img/homepage/blue-bg-boy.svg),
+    url(../../../assets/img/homepage/gold-bg-boy.svg),
+    url(../../../assets/img/left-dots.svg),
+    url(../../../assets/img/right-dots.svg);
+  background-repeat: no-repeat;
+  // background-position: bottom, center;
+  background-position: center 128px, 18px 90px, right, 30px 65px;
+  position: relative;
+
+  .vector {
+    position: absolute;
+    top: -200px;
+    right: -125px;
+    z-index: -1;
+  }
+}
+
+.jumbotron-boy {
+  margin-bottom: 30px;
+}
+// .nslide{
+//    background-image: url('../image/bgh1.PNG');
+//     width: 100%;
+//     height: 400px;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+.headerslider button.slick-next.slick-arrow {
+  display: none !important;
+}
+.jumbo-tron-header {
+  font-weight: 400;
+  font-size: 20px;
+}
+.small-h {
+  padding-top: 80px !important;
+}
+.jumbo-tron-text {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #0a033c;
+}
+
+.jumbo-top {
+  margin-top: 300px !important;
+}
+.headerslider .slick-list.draggable {
+  padding: 0px !important;
+}
+@media only screen and (max-width: 1025px) {
+  .jumbo-tron-text {
+    .text {
+      margin: 0 auto !important;
+    }
+  }
+  .sliden{
+    margin-right: 35px;
+    margin-top: 49px;
+    height: 600px;
+    width: 400px;
+    margin-top: -33px;
+    margin-bottom: -105px;
+  }
+  .jumbo-tran-animation {
+    background-position: center 128px, center 90px, 525px center, 128px 65px;
+
+    .vector {
+      right: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .jumbo-tron-text {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0a033c;
+  }
+
+  .jumbotron-boy {
+    height: 330px !important;
+  }
+
+  // .slide{
+  //   height: 80px !important;
+  // }
+
+  .jumbo-tran-animation {
+    background-position: center 63px, center 45px, right, 50px 40px !important;
+    background-size: 267px, 301px, 75px, 75px !important;
+  }
+
+  .vector {
+    transform: scale(0.5);
+    right: -80px !important;
+  }
+  .text{
+    font-size: 25px !important;
+  }
+}
+
+@keyframes changeBg {
+  0% {
+    background-image: url(../../../assets/img/homepage/gold-bg-boy.svg),
+      url(../../../assets/img/homepage/blue-bg-boy.svg);
+  }
+
+  25% {
+    background-image: url(../../../assets/img/homepage/gold-bg-boy.svg),
+      url(../../../assets/img/homepage/blue-bg-boy.svg);
+  }
+
+  50% {
+    background-image: url(../../../assets/img/homepage/blue-bg-boy.svg),
+      url(../../../assets/img/homepage/gold-bg-boy.svg);
+  }
+
+  75%,
+  100% {
+    background-image: url(../../../assets/img/homepage/blue-bg-boy.svg),
+      url(../../../assets/img/homepage/gold-bg-boy.svg);
+  }
+}
+
+.jumbo-top {
+  margin-top: 300px !important;
+}

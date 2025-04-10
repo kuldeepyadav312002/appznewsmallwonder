@@ -1,0 +1,21 @@
+<div class="learning-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-12 heading">{{ heading }}</div>
+      <div class="col-md-9 col-12">{{ text }}</div>
+    </div>
+    <!-- learning blocks -->
+    <div class="learning-block-bullets mt-4">
+      <div
+        *ngFor="let item of bulletPoints"
+        class="bullet-points"
+        [ngStyle]="{
+          'border-color': getColor(),
+          color: getColor()
+        }"
+      >
+        <p>{{ item }}</p>
+      </div>
+    </div>
+  </div>
+</div>

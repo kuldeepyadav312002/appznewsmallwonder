@@ -1,0 +1,50 @@
+@import "../../../../assets/styles/variables.scss";
+
+.franchise-section {
+  width: 100%;
+  padding: 3em 0;
+  background: #fff;
+  position: relative;
+}
+
+.title_sec {
+  p {
+    font-family: Shadows Into Light Two, cursive;
+    font-size: 1.1em;
+    color: $button-primary;
+  }
+}
+
+.p2 {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.franchise-section-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fo_img_1 {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  background: url("/assets/img/bg-widget-15.png") no-repeat;
+  width: 187px;
+  height: 198px;
+}
+.fo_img_2 {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  background: url("/assets/img/bg-widget-14.png") no-repeat;
+  width: 184px;
+  height: 158px;
+}
+
+.franchiseKids {
+  img {
+    width: 100%;
+  }
+}

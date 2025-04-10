@@ -1,0 +1,188 @@
+@import "../../../assets/styles/variables.scss";
+
+.admission-intro-text {
+  padding: 3em 0;
+  width: 100%;
+  background: $white-primary;
+}
+
+.intro-img {
+  width: 80%;
+  height: 10em;
+}
+
+.admission-applications {
+  color: white;
+  background-color: #8a2b3d;
+}
+
+.application-title {
+  text-align: center;
+
+  .h2 {
+    font-weight: 900;
+  }
+}
+
+.card {
+  background-color: gainsboro;
+  color: black;
+  border-radius: 0%;
+  .card-body {
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.curs-left2 img, .curs-left-btn img{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .btt-s1 {
+    background-color: #b4874c !important;
+    border-color: #b4874c !important;
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 991px){
+  .adm-h4, .txt-c{
+    font-size: 25px !important;
+  }
+}
+
+
+@media only screen and (max-width: 950px) {
+  .card-body {
+    padding: 0px;
+  }
+}
+
+.row {
+  margin-bottom: 0.75rem;
+}
+
+span {
+  font-size: 10px;
+}
+
+.col-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.btn {
+  background-color: #8a2b3d;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
+  border-radius: 0%;
+}
+
+@media only screen and (min-width: 600px) {
+  .card-body {
+    font-size: small;
+  }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 600px) {
+  .admission-applications {
+    font-size: 0.85em;
+  }
+  .card-body {
+    font-size: 0.85em;
+    h6 {
+      font-size: 1.1em;
+    }
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  h5 {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .admission-applications {
+    font-size: 0.75em;
+  }
+  .card-body {
+    font-size: 0.75em;
+    h6 {
+      font-size: 1em;
+    }
+  }
+  h2 {
+    font-size: 1em;
+  }
+  h5 {
+    font-size: 0.75em;
+  }
+}
+
+/* admission */
+
+.five {
+  color: #b4874c;
+  font-size: 82px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.para3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #10112e;
+}
+.para4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #10112e;
+}
+.adm-h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.adm-sec {
+  padding-bottom: 60px !important;
+}
+.adm-gh {
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}
+
+.para5 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.slide {
+  width: 100%;
+  // height: 100px;
+}
+@media only screen and (min-width: 275px) and (max-width: 1024px) {
+  .five {
+    color: #b4874c !important;
+    font-size: 82px !important;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .adm-bg {
+    display: none;
+  }
+  .adm-sec {
+    padding-bottom: 0 !important;
+  }
+}
+
+
+@media (max-width: 475px) {
+  .adm-h4, .txt-c{
+    font-size: 20px !important;
+  }
+}

@@ -1,0 +1,111 @@
+// .event-title {
+//     font-size: 25px;
+// }
+
+.event-tile {
+    position: relative;
+
+    img {
+        height: 450px;
+        width: 560px;
+        border-radius: 25px;
+    }
+}
+
+.event-sub-title {
+    font-size: 30px;
+    color: #0A033C;
+    font-weight: bold;
+}
+
+.event-tile::before {
+    border-radius: 25px;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(360deg, rgba(2, 0, 36, 0.48923319327731096) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.testimonila-intro {
+    font-weight: 600;
+}
+@media only screen and (max-width: 948px)  {
+     
+
+    
+}
+@media only screen and (max-width: 480px) {
+
+    img {
+        height: auto !important;
+        width: 300px !important;
+        border-radius: 25px;
+    }
+    .event-p{
+        margin-top: -30px;
+    }
+
+}
+
+.event-p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #6F1931;
+
+}
+.event-h{
+    font-size: 55px ;
+    font-weight: 700;
+}
+.event-1{
+    background-image: url("../../../assets/image/girlss1.png");
+    height: 450px;
+    width: 100% !important;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    
+}
+.event-tile{
+    @media screen and (max-width: 768px){
+        font-size: 14px;
+        height: 223px !important;
+    }
+}
+.event-2{
+    background-image: url("../../../assets/image/recente7.png");
+    height: 450px;
+    width: 100% !important;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.icon-eve{
+    height: 22px !important;
+    width: 22px !important;
+}
+.icon-eb{
+    display: flex;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 1025px){
+    .event-h{
+        font-size: 30px ;
+        font-weight: 700;
+    }
+}

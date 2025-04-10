@@ -1,0 +1,23 @@
+.d-flex.align-items-center{
+    position: absolute;
+    align-items: center;
+    z-index: 5;
+    width: 50%;
+    transform: translate(0%, -150%);
+}
+
+.card-title{
+    color: #8a2b3d;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.btn{
+background-color: #8a2b3d;
+border-radius: 1.5em;
+color: white;
+}
+
+.card-body{
+    margin-left: 7%;
+}

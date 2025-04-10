@@ -1,0 +1,33 @@
+@import "../../../../assets/styles/variables.scss";
+
+.corner-stone-section {
+  width: 100%;
+  background: $background-primary-light;
+  padding: 3em 0;
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  h5 {
+    color: maroon;
+    text-transform: uppercase;
+  }
+}
+
+
+.circle {
+  height: 7em;
+  width: 7em;
+  background-color: #8c8b8b;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}

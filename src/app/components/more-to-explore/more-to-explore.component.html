@@ -1,0 +1,11 @@
+<div class="more-to-explore">
+  <div class="container">
+    <h3>There's more to explore</h3>
+    <div class="row mt-5">
+      <div *ngFor="let image of imageList" class="col-md-3">
+        <img [src]="image.imageUrl" (click)="goToImageLink(image.link)" alt="explore-more-image" />
+        <a href="{{image.link}}">{{image.text}}</a>
+      </div>
+    </div>
+  </div>
+</div>

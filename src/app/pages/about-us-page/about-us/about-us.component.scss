@@ -1,0 +1,35 @@
+@import "../../../../assets/styles/variables.scss";
+
+.glance-component {
+  width: 100%;
+  padding: 3em 0;
+  background: #fff;
+
+  .rocketImage {
+    background: url("/assets/img/bg-widget-5.png") no-repeat;
+    width: 83px;
+    height: 90px;
+    position: absolute;
+    left: 20%;
+  }
+
+}
+
+.TEXT{
+  font-family: 'Nunito', sans-serif;
+}
+
+//.glance-item {
+//  width: 70%;
+//  font-family: "Nunito", sans-serif;
+//  text-align: center;
+//  border: 1px solid;
+//  padding-top: 1em;
+//  height: 5em;
+//
+//  h2 {
+//    color: $button-primary;
+//    margin-bottom: 0;
+//  }
+//
+//}

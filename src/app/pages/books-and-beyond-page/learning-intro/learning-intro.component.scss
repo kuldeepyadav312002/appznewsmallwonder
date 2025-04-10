@@ -1,0 +1,58 @@
+@import "../../../../assets/styles/variables.scss";
+
+.learning-intro-section {
+  padding: 3em 0;
+  width: 100%;
+  background: $white-primary;
+
+  h3 {
+    text-transform: uppercase;
+    
+  }
+}
+
+.heading {
+  color: #8a2b3d;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.content-block {
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .learning-intro-section {
+    .content-block {
+      width: 100%;
+    }
+    .container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .learning-intro-section {
+    .content-block, p {
+      font-size: 1em;
+    }
+    .heading, h3 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .learning-intro-section {
+    .content-block, p {
+      font-size: 0.8em;
+    }
+    .heading, h3 {
+      font-size: 1.25em;
+    }
+  }
+}

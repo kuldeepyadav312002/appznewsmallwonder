@@ -1,0 +1,25 @@
+#https://www.linkedin.com/pulse/create-angular-app-using-deploy-aws-suite-andr%C3%A9s-casta%C3%B1o/
+version: 0.2
+environment_variables:
+  plaintext:
+    S3_BUCKET: "www.smallwonders.edu.in"
+    BUILD_ENV: "prod"
+phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - npm install -g @angular/cli@8.0.3
+  build:
+    commands:
+      - echo Build started on `date`
+      - ng build --${BUILD_ENV}
+  post_build:
+    commands:
+      - aws s3 cp dist/small-wonder s3://${S3_BUCKET} --recursive --region ap-south-1
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - "**/*"
+  base-directory: "dist/small-wonder"
+  discard-paths: yes

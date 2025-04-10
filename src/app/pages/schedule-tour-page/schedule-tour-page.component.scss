@@ -1,0 +1,22 @@
+.title {
+  margin-top: 5rem;
+}
+
+.img-fluid{
+  text-align: center !important;
+  
+    width: 900px!important;
+    height: 700px !important;
+}
+
+
+
+@media (max-width: 640px) {
+  .adm-bg {
+    display: none;
+  }
+
+  .branch-h {
+    margin-top: 0 !important;
+  }
+}

@@ -1,0 +1,63 @@
+<!-- Jumbo-tron starts-->
+<div class="jumbo-tron d-flex align-items-center pb-lg-5 new">
+  <div class="container">
+    <div class="mobile-view px-lg-5">
+      <div class="intro-header-mobile text-center">
+        <span class="primary-color">Small Wonders is a Place where </span>children find their true purpose
+      </div>
+    </div>
+     <div class="row">
+        <div class="col-lg-5 mb-10 mt-5 mt-lg-0 intro-banner align-items-center">
+          <ngx-slick-carousel class="slider-for-new carousel" #slickModal="slick-carousel"
+            [config]="slideConfig_for_single">
+            <div ngxSlickItem *ngFor="let item of branchList_single" class="slide banner-slide">
+              <!-- <img [src]="item.imgSrc" class="figure-img img-fluid rounded"> -->
+              <img class="cover-img changeimage" [src]="item.imgSrc" alt="">
+            </div>
+          </ngx-slick-carousel>
+          <!--- Back short image-->
+          <div class="intro-banner-img-background">
+            <!-- <img src="{{clickedImageUrl}}" class="changeimage" alt=""> -->
+          </div>
+          <!--- top right crl-->
+          <div class="intro-banner-title p-lg-2">
+            <div class="row">
+              <div class="col-3">
+                <img src="{{clickedImageUrl}}" class="changeimage" alt="">
+              </div>
+              <div class="col-9 d-flex align-items-center text-center ps-lg-4">Our History</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-7 d-flex flex-column text-center text-lg-start">
+          <div class="intro-header text-lg-start text-center my-lg-1 pe-lg-5">
+            <span class="primary-color">Small Wonders </span> is a <br>Place where children <br> find their true purpose
+          </div>
+
+          <div class="intro-content text-lg-start text-center mb-lg-1 pe-lg-5 home-p">
+            We are committed to providing rich experiences to promote cognitive, social, and emotional development and
+            ensure
+            students have a solid foundation needed for lifelong learning. With a student-centered approach, students
+            are
+            active
+            participants in their own learning.
+          </div>
+
+          <div class="my-5 my-lg-0 boxpadding">
+            <ngx-slick-carousel class="slider-nav carousel" #slickModal="slick-carousel" [config]="slideConfig_nav"
+              (afterChange)="afterChange($event)">
+              <div ngxSlickItem *ngFor="let item of branchList" class="slide">
+                <figure class="figure cursor-pointer">
+                  <img [src]="item.imgSrc" (click)="ImageClick(item.imgSrc)" class="figure-img img-fluid rounded"height="223px">
+                  <figcaption class="figure-caption font-weight-bold text-center home-title">{{item.title}}</figcaption>
+                </figure>
+              </div>
+            </ngx-slick-carousel>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Jumbo-tron ends-->

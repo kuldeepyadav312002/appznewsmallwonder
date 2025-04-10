@@ -1,0 +1,190 @@
+@import "../../../assets/styles/variables.scss";
+
+.franchise-redirects {
+  padding: 3em 0;
+}
+
+.lg{
+  margin-top: -99px;
+  margin-bottom: 60px;
+}
+
+.circle {
+  height: 7em;
+  width: 7em;
+  background-color: $button-primary;
+  border-radius: 50%;
+  display: block;
+}
+
+.col-lg-8 {
+  padding-bottom: 40px !important; 
+}
+
+.block-heading {
+  width: 80%;
+
+  p {
+    font-size: 2em;
+    background: $background-light-grey;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.25em;
+  }
+}
+
+.franchise-title {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.franchise-discription {
+  font-size: 16px;
+  max-width: 800px;
+  margin: auto;
+  font-weight: 400;
+  color: #0a033c;
+}
+
+.wf-section {
+  width: 100%;
+  background-color: #f3e7cd;
+}
+
+.wf-section img {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 !important;
+}
+
+.wf-heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0a033c;
+}
+
+.wf-sub-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.wf-section {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0a033c;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.owner-text {
+  color: gray;
+}
+
+.block-text {
+  width: 80%;
+  text-align: center;
+}
+
+.advantages-container > div {
+  background: #eee;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.advantages-number {
+  font-size: 6rem;
+  font-weight: 700;
+  position: absolute;
+  top: -75px;
+  left: 25px;
+  color: #deac67;
+}
+
+.block-redirect-btn {
+  background: $button-primary;
+  color: $white-primary;
+}
+
+@media (max-width: 1024px) {
+  .franchise-title,
+  .own-heading {
+    font-size: 30px;
+  }
+
+  .advantages-number {
+    font-size: 5rem;
+    top: -60px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .bg-img {
+    display: none !important;
+  }
+  .franchise-redirects {
+    padding-top: 0 !important;
+  }
+
+  .franchise-title {
+    font-size: 30px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .franchise-redirects {
+    .block-heading {
+      width: 100%;
+    }
+    .block-text {
+      width: 100%;
+    }
+
+    .lg{
+      margin-top: 20px;
+      margin-bottom: 21px;
+  
+    }
+    .col-md-4 {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+  .advantages-number {
+    font-size: 4rem;
+    top: -50px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .franchise-redirects {
+    .block-heading {
+      p {
+        font-size: 1.5em;
+      }
+    }
+    .block-text {
+      font-size: 1em;
+    }
+    .btn {
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .franchise-redirects {
+    .block-heading {
+      p {
+        font-size: 1.25em;
+      }
+    }
+    .block-text {
+      font-size: 0.8em;
+    }
+    .btn {
+      font-size: 0.8em;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div class="age-break-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <!-- slick carousel component -->
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+          (init)="slickInit($event)"
+        >
+          <div
+            ngxSlickItem
+            *ngFor="let item of schoolAgeBreakList"
+            class="slide"
+          >
+            <div class="age-break-box">
+              <div class="age-break-box__desc">
+                <h2>{{ item.title }}</h2>
+                <p>{{ item.ageRange }} years</p>
+              </div>
+              <figure>
+                <img [src]="item.imgSrc" alt="" />
+              </figure>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</div>

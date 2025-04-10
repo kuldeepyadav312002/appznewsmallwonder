@@ -1,0 +1,69 @@
+@import "../../../../assets/styles/variables.scss";
+
+.activity-section {
+  width: 100%;
+  padding: 3em 0;
+  background: $white-primary;
+  position: relative;
+}
+
+::ng-deep .nav-btn {
+  height: 41px !important;
+  width: 41px !important;
+}
+::ng-deep .prev-slide.slick-disabled,
+.next-slide.slick-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+::ng-deep .prev-slide,
+::ng-deep .next-slide {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+}
+
+::ng-deep .prev-slide {
+  background: url(/assets/img/prev-item.png) no-repeat;
+  left: -50px !important;
+}
+::ng-deep .next-slide {
+  background: url(/assets/img/next-item.png) no-repeat;
+  right: -50px !important;
+}
+
+.activity-box {
+  opacity: 0;
+  transition: all 0.35s;
+  img {
+    height: 30em;
+    width: 100%;
+  }
+}
+
+.slick-center .activity-box {
+  opacity: 1;
+}
+
+.title_sec {
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1024px){
+  .act-h1{
+    font-size: 30px !important;
+  }
+}
+

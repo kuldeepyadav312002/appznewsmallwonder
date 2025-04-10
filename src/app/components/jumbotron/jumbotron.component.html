@@ -1,0 +1,51 @@
+<!-- Jumbo-tron starts-->
+<div class="jumbo-tron d-flex align-items-center my-lg-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 order-1 order-sm-1 d-flex flex-column text-center text-lg-start pt-1 mt-lg-5 pt-lg-5">
+        <div>
+          <div class="active-link jumbo-tron-header mb-2 mb-lg-4">Welcome to Small Wonders</div>
+          <div class="text-center text-lg-start jumbo-tron-text">
+            <div class="mb-lg-3 mb-3 col-sm-8 text" style="font-size: 55px;">Geared towards providing students with the essential skills
+              to
+              achieve success!</div>
+            <a href="#contact-us">
+              <button type="button" class="shadow-lg btn btn-primary button-rounded px-4 py-3 mt-4 mt-lg-3">Know More
+                <i class="fa fa-angle-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 order-2 home_slide order-sm-2 text-center mb-10 mt-5 mt-lg-0">
+        <!-- <ngx-slick-carousel class="slider-nav carousel headerslider" #slickModal="slick-carousel"
+          [config]="slideConfig_nav_new" (afterChange)="afterChange($event)">
+          <div ngxSlickItem *ngFor="let item of branchListNew" class="slide">
+            <img [src]="item.imgSrc" class="img-fluid jumbotron-boy" alt="">
+          </div>
+        </ngx-slick-carousel> -->
+        <!-- <ngx-slick-carousel class="slider-for slider-nav carousel headerslider" #slickModal="slick-carousel"
+          [config]="slideConfig_nav_new" (afterChange)="afterChange($event)">
+          <div ngxSlickItem *ngFor="let item of branchListNew" class="slide">
+            <img class="img-fluid jumbotron-boy" [src]="item.imgSrc" alt="">
+          </div>
+        </ngx-slick-carousel> -->
+        <!-- <img src="assets/image/blueboy.png" class="img-fluid jumbotron-boy" alt=""> -->
+        <!-- <img src="assets/img/vector.svg" class="img-fluid vector" alt=""> -->
+
+
+        <!-- You can now use your library component in app.component.html -->
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+          (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+          (beforeChange)="beforeChange($event)">
+          <!-- <div class="nslide"> -->
+          <div ngxSlickItem *ngFor="let slide of slides" class="sliden">
+            <img src="{{ slide.img }}" alt="" width="600px" height="500px" />
+          </div>
+          <!-- </div> -->
+        </ngx-slick-carousel>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Jumbo-tron ends-->

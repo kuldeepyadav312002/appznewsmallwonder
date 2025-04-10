@@ -1,0 +1,12 @@
+<div class="learning-intro-section">
+  <div class="container">
+    <h3 class="mb-4 text-center">{{ title }}</h3>
+    <p class="mb-4">{{ content }}</p>
+    <div class="content-block">
+      <div class="row mb-3" *ngFor="let item of contentList">
+        <div class="col-md-3 col-12 heading">{{ item.heading }}</div>
+        <div class="col-md-9 col-12">{{ item.text }}</div>
+      </div>
+    </div>
+  </div>
+</div>

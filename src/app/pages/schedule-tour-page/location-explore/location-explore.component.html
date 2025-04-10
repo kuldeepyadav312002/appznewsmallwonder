@@ -1,0 +1,145 @@
+<div class="branch-info-section">
+  <div class="container">
+    <div class="header active-link text-center branch-title" id="branchTitle">{{branchTitle}}</div>
+    <div class="sub-header text-center mt-3 mb-lg-0 branch-h" id="branchHeading">{{branchHeading}}</div>
+  </div>
+
+  <app-branch-info-section></app-branch-info-section>
+
+
+  <!-- <div class="card-container branch_section">
+        <div class="card" [ngClass]="{'larger': isCard1Larger}" (mouseenter)="enlargeCard1()" (mouseleave)="originalSize()">
+           <img src="{{branchList_desktop[0].imgSrcImg}}" alt="">
+           <div class="details_card">
+              <div class="branch_one">
+                <div class="text-center upper">
+                  {{branchList_desktop[0].title}}
+                </div>
+
+                <div class="text-center lower">
+                  {{branchList_desktop[0].address}}
+                </div>
+              </div>
+           </div>
+
+        </div>
+        <div class="card" [ngClass]="{'larger': isCard2Larger}" (mouseenter)="enlargeCard2()" (mouseleave)="originalSize()">
+           <img src="{{branchList_desktop[1].imgSrcImg}}" alt="">
+           <div class="details_card ">
+              <div class="branch_second">
+                <div class="text-center upper">
+                  {{branchList_desktop[1].title}}
+                </div>
+
+                <div class="text-center lower">
+                  {{branchList_desktop[1].address}}
+                </div>
+              </div>
+           </div>
+        </div>
+        <div class="card" [ngClass]="{'larger': isCard3Larger}" (mouseenter)="enlargeCard3()" (mouseleave)="originalSize()">
+           <img src="{{branchList_desktop[2].imgSrcImg}}" alt="">
+           <div class="details_card">
+              <div class="branch_thired">
+                <div class="text-center upper">
+                  {{branchList_desktop[2].title}}
+                </div>
+
+                <div class="text-center lower">
+                  {{branchList_desktop[2].address}}
+                </div>
+              </div>
+           </div>
+        </div>
+     </div>  -->
+
+  <!-- You can now use your library component in app.component.html -->
+  <!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of branchList" class="slide">
+          <img src="{{slide.imgSrc}}" alt="" >
+        </div>
+      </ngx-slick-carousel>
+
+    </div> -->
+
+  <!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig_for_desktop">
+        <div ngxSlickItem *ngFor="let item of branchList_desktop" class="slide">
+          <div class="shadow-lg align-items-center" [ngClass]="item.classnamevl">
+            <img [src]="item.imgSrcImg" alt="">
+            <div class="row branch-box">
+              <div class="text-center upper">
+                {{item.title}}
+              </div>
+
+              <div class="text-center lower">
+                {{item.address}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel> -->
+  <!-- <img class="left-bg" src="../../../../assets/img/branch-left-bg.svg" alt=""> -->
+  <!-- <img class="right-bg" src="../../../../assets/img/branch-right-bg.svg" alt=""> -->
+</div>
+
+<!-- <div class="row branch-mobile justify-content-center align-items-center">
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+        (init)="slickInit($event)">
+        <div ngxSlickItem *ngFor="let item of branchList" class="slide">
+          <img class="chart-bg" [src]="item.imgSrc" alt="">
+          <img class="gery-bg" src="../../../../assets/img/grey-background.svg" alt="">
+          <div class="card text-center d-flex ">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <div class="card-title mb-0 py-2">{{item.title}}</div>
+              <div class="card-text py-2">{{item.address}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+
+    </div> -->
+
+<!-- <div class="text-center mb-5 tour" >
+  <button type="button" id="scheduleButton" class="shadow-lg btn btn-primary button-rounded px-4 py-3 mt-lg-5">Schedule a Tour <i
+      class="fa fa-angle-right"></i></button>
+</div> -->
+
+<!-- <div class="branch-info-section">
+  <div class="container">
+    <div class="title_sec">
+      <p>
+        It’s fun to be here
+      </p>
+      <h3>Our Branches</h3>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+          (init)="slickInit($event)"
+        >
+          <div ngxSlickItem *ngFor="let item of branchList" class="slide">
+            <div class="branch-info-card">
+              <a href="/#" class="row">
+                <figure class="col-lg-4 col-4">
+                  <img [src]="item.imgSrc" />
+                </figure>
+                <div class="col-lg-8 col-8">
+                  <p class="branch-info-card-title">{{ item.title }}</p>
+                  <p class="subText">{{ item.address }}</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button class="btn mbtn" (click)="goToSchedulePage()">Schedule a tour</button>
+    </div>
+  </div>
+</div> -->

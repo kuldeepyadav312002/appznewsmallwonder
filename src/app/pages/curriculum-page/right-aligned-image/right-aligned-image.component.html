@@ -1,0 +1,16 @@
+<div class="right-aligned-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <p class="section-title">{{ title }}</p>
+        <p>{{ content }}</p>
+        <ul *ngFor="let item of listItems; let i = index" >
+          <a href="#">{{i+1}} . {{ item }}</a>
+        </ul>
+      </div>
+      <div class="col-md-5">
+        <img [src]="imgSrc" alt="right-aligned-img-curriculum" />
+      </div>
+    </div>
+  </div>
+</div>

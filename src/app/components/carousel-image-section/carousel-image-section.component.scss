@@ -1,0 +1,193 @@
+@import "../../../assets/styles/variables.scss";
+
+.adjust-logo {
+  z-index: 1;
+  position: relative;
+}
+
+.slide-home-page {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1200px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slide-home-page {
+    height: 30em;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1200px) {
+  .slide-home-page {
+    height: 25em;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 950px) {
+  .slide-home-page {
+    height: 20em;
+  }
+}
+
+@media only screen and (min-width: 670px) and (max-width: 800px) {
+  .slide-home-page {
+    height: 18em;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 670px) {
+  .slide-home-page {
+    height: 16em;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 650px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+}
+
+
+@media only screen and (min-width: 370px) and (max-width: 520px) {
+  .slide-home-page {
+    height: 13em;
+    width: 110%;
+    margin-left: -10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .slide-home-page {
+    height: 10em;
+    width: 110%;
+    margin-left: -10px
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.3em;
+  }
+  h2 {
+    font-size: 0.8em;
+  }
+}
+
+.slide-1 {
+  background: url("/assets/img/homepage/1.jpg") no-repeat bottom;
+  background-size: cover;
+}
+
+.slide-2 {
+  background: url("/assets/img/homepage/2.jpg") no-repeat bottom;
+  background-size: cover;
+}
+
+.slide-3 {
+  background: url("/assets/img/homepage/3.jpg") no-repeat bottom;
+  background-size: cover;
+}
+
+//.bulb {
+//  position: absolute;
+//  opacity: 0.5;
+//  bottom: 2%;
+//  right: 20%;
+//  width: 200px;
+//  height: 300px;
+//}
+
+//.climbingStairs {
+//  position: absolute;
+//  bottom: 5%;
+//  right: 5%;
+//  cursor: pointer;
+//}
+
+.h100 {
+  height: 100%;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 2%;
+  cursor: pointer;
+}
+
+
+h1 {
+  color: $white-primary;
+  font-family: "Cabin Sketch", cursive;
+  //font-size: 3.5em;
+  text-shadow: 1px 0 2px black;
+
+  span {
+    display: block;
+  }
+}
+
+.slide-1 {
+  h2 {
+    font-family: "Bangers", cursive;
+    color: $white-primary;
+    //font-size: 3em;
+    text-shadow: 2px 0 2px black;
+  }
+}
+
+.slide-2 {
+  h1 {
+    text-align: left;
+  }
+
+  h2 {
+    font-family: Shadows Into Light Two, cursive;
+    color: $white-primary;
+  }
+}
+
+.slide-3 {
+  h1 {
+    text-align: left;
+  }
+
+  h2 {
+    font-family: Shadows Into Light Two, cursive;
+    color: $white-primary;
+  }
+}

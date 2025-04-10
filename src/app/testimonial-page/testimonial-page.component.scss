@@ -1,0 +1,355 @@
+$white-primary: #fff;
+$dark-primary: #8c8b8b;
+
+$button-primary: #8a2b3d;
+$blue-primary: #2e5077;
+
+$background-primary-light: #f9f6f1;
+$shadow-yellow: #ffc107;
+$background-light-grey: #eee;
+
+
+$btn-primary: #B4874C;
+$active-text-color: #772234;
+$theme-blue: #0A2D51;
+
+
+// .testimonial-section {
+//   width: 100%;
+//   padding: 3em 0;
+//   background: $white-primary;
+//   position: relative;
+// }
+
+// .title_sec {
+//   text-align: center;
+//   margin: 0 0 2em;
+
+//   p {
+//     margin: 0;
+//     color: $button-primary;
+//     font-size: 25px;
+//     line-height: 20px;
+//     font-family: Shadows Into Light Two, cursive;
+//   }
+// }
+
+// ::ng-deep .nav-btn {
+//   height: 41px !important;
+//   width: 41px !important;
+// }
+
+// ::ng-deep .prev-slide.slick-disabled,
+// .next-slide.slick-disabled {
+//   pointer-events: none;
+//   opacity: 0.5;
+// }
+
+// ::ng-deep .prev-slide,
+// ::ng-deep .next-slide {
+//   font-size: 0;
+//   line-height: 0;
+//   position: absolute;
+//   top: 50%;
+//   display: block;
+//   width: 20px;
+//   height: 20px;
+//   padding: 0;
+//   transform: translateY(-50%);
+//   cursor: pointer;
+//   border: none;
+// }
+
+// ::ng-deep .prev-slide {
+//   background: url(/assets/img/prev-item.png) no-repeat;
+//   left: -50px !important;
+// }
+// ::ng-deep .next-slide {
+//   background: url(/assets/img/next-item.png) no-repeat;
+//   right: -50px !important;
+// }
+
+// .testimonial-box {
+//   text-align: center;
+//   transform: scale(0.7);
+//   opacity: 0.8;
+//   transition: all 0.35s;
+
+//   &__desc {
+//     p {
+//       font-size: 14px;
+//       color: #666;
+//       font-style: italic;
+//     }
+//   }
+
+//   &__info {
+//     margin: 20px 0 0;
+//     display: flex;
+//     text-align: left;
+//     align-items: center;
+//     justify-content: center;
+
+//     figure {
+//       margin: 0 20px 0 0;
+//       width: 60px;
+//       height: 60px;
+//       border: 1px solid #fff;
+//       border-radius: 100%;
+//       box-shadow: 4px -4px 1px $shadow-yellow;
+
+//       img {
+//         width: 60px;
+//         height: 60px;
+//       }
+//     }
+//   }
+// }
+
+// .slick-center .testimonial-box {
+//   transform: scale(1);
+//   opacity: 1;
+// }
+
+// .ts_img_1 {
+//   left: 5%;
+//   top: 10%;
+//   background: url("/assets/img/bg-widget-12.png") no-repeat;
+//   width: 190px;
+//   height: 190px;
+//   position: absolute;
+// }
+
+// .ts_img_2 {
+//   right: 5%;
+//   top: 20%;
+//   background: url("/assets/img/bg-widget-13.png") no-repeat;
+//   width: 99px;
+//   height: 120px;
+//   position: absolute;
+// }
+
+// @media only screen and (max-width: 1000px) {
+//   .testimonial-box {
+//     width: 100%;
+//     margin: auto;
+//   }
+// }
+
+// @media only screen and (max-width: 600px) {
+//   ::ng-deep .next-slide {
+//     display: none !important;
+//   }
+
+//   ::ng-deep .prev-slide {
+//     display: none !important;
+//   }
+// }
+
+.stars {
+  display: initial;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 15px;
+  font-weight: 400;
+  // display: -webkit-box;
+  // -webkit-box-orient: vertical;
+  // -webkit-line-clamp: 6;
+  // overflow: hidden;
+}
+.slick-slide {
+  margin: 0 20px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -20px;
+}
+// .slick-slide {
+//   // height:250px !important;
+//   width: 400px ;
+// }
+
+.slick-slide {
+  //width: 306px !important;
+
+  .card {
+    background-color: #ffffff5e !important;
+    height: 320px !important;
+    //width: 228px !important;
+    position: relative;
+
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+
+    padding-top: 3rem !important;
+  }
+}
+.slick-current {
+  background-color: transparent !important;
+
+  .card {
+    background-color: #ffffff5e !important;
+  }
+}
+.card-quote {
+  display: initial;
+  height: 20px;
+  width: 20px;
+}
+
+.card-avatar {
+  width: 100px;
+  position: absolute;
+  top: -50px;
+  z-index: 100000000000;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.testimonila-intro {
+  font-weight: 600;
+}
+
+.testimonial-title {
+  font-size: 30px;
+  color: #0a033c;
+  font-weight: bold;
+}
+
+.testimonial-discription{
+  font-size: 14px;
+  color: #0a033c;
+  font-weight: normal;
+}
+
+.testimonials {
+  // background-image: url("../../assets/img/testimonial background.svg");
+  // background-repeat: no-repeat;
+  // background-size: inherit;
+  // background-position: -85px -58px;
+  // background-size: 110% 136%;
+}
+
+.testimonialcard{
+  columns: 3 200px;
+  column-gap: 1.5rem;
+}
+
+.testimonialcard> div{
+  background-color: #fff;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.09);
+}
+
+.testimonialcard .card-title{
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.testimonial-discription{
+  font-size: 16px;
+  max-width: 800px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1025px) {
+  .testimonials {
+    background-size: contain !important;
+    background-position-y: center !important;
+  }
+
+  .testimonialcard{
+    columns: 2 200px;
+    column-gap: 1.5rem;
+  }
+
+  .slick-current {
+    .card {
+      margin: 0 auto !important;
+      margin-top: 50px !important;
+      margin-bottom: 50px !important;
+
+      padding-top: 3rem !important;
+    }
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .testimonial-title{
+    font-size:30px !important;
+  }
+  .testimonial-discription{
+    font-size: 14px !important;
+  }
+}
+
+.test-p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #6f1931;
+}
+
+.test-h {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+// .slide-w{
+//   width: 450% !important;
+// }
+
+@media only screen and (max-width: 575px) {
+  .testimonialcard{
+    columns: 1;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .slide_height {
+    height: 400px !important;
+  }
+  .container {
+    overflow: hidden !important;
+  }
+
+  // .slick-slide {
+  //   width: 345px !important;
+  // }
+
+
+  .test-h {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .testimonials {
+    margin: 20px 5px;
+  }
+}
+// @media only screen and (max-width: 375px) {
+//   .slick-slide {
+//     width: 352px !important;
+//   }
+// }
+// @media only screen and (max-width: 320px) {
+//   .slick-slide {
+//     width: 296px !important;
+//   }
+// }
+
+
+
+.card_hyt{
+    min-height: 297px !important;
+    margin-bottom: 69px;
+}

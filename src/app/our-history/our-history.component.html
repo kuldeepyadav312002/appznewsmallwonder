@@ -1,0 +1,31 @@
+<!-- Hero -->
+<!-- <section class="">
+  <div class="act-bg">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="act-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<div class="container-fluid p-0">
+  <div class="timeline-container-inner">
+    <div class="heading">
+      <div class="ft-logo">
+        <img src="../../../assets/image/footer-logo.svg" />
+      </div>
+      <h2 class="text-center my-3">{{heading}}</h2>
+    </div>
+    <div class="timeline-container">
+      <div class="timeline">
+        <div class="timeline-item" *ngFor="let event of ourHistory">
+          <div class="timeline-date">{{ event.date }}</div>
+          <div class="timeline-content">
+            <p class="timeline-description">{{ event.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

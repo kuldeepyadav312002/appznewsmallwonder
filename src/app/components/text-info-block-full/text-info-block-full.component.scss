@@ -1,0 +1,40 @@
+@import "../../../assets/styles/variables.scss";
+
+.text-info-block-full {
+  width: 100%;
+  padding: 3em 0;
+  background: #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .text-info-block-full {
+    padding: 1em 0;
+    p {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .text-info-block-full {
+    h3{
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .text-info-block-full {
+    h3{
+      font-size: 1.2em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+<!-- <div class="bg-img">
+  <app-background-img-text [title]="title" [bgImage]="bgImage"></app-background-img-text>
+</div> -->
+<!-- <app-text-info-block-full
+  [title]="sectionHeading1"
+  [text]="sectionText1"
+></app-text-info-block-full> -->
+<div class="franchise-redirects">
+  <div class="container">
+    <div class="mt-5 franchise-title text-center test-h mb-lg-3">{{ sectionHeading1 }}</div>
+    <div class="franchise-discription text-center mb-lg-6 mb-5">{{ sectionText1 }}</div>
+    <div class="row wf-section rounded-5 my-5 p-4 pb-0">
+      <div class="col-lg-4 d-flex justify-content-center  lg">
+        <img class="d-block m-auto mb-3 text-center h-200" src="../../../assets/image/footer-logo.svg">
+      </div>
+      <div class="col-lg-8">
+        <div class="test-h wf-heading mt-2">{{ workFranchiseHeading }}</div>
+        <div class="test-h wf-sub-text mb-3">{{ workFranchiseSubText }}</div>
+        <div class="test-h my-4 mb-4">{{ workFranchiseSubDes }}</div>
+        <div class="test-h pb-10 wf-sub-text">{{ workFranchiseOwnerName }}</div>
+        <div class="test-h owner-text">{{ workFranchiseOwner }}</div>
+      </div>
+    </div>
+    <div>
+    </div>
+    <div class="row">
+      <div class="mt-8 text-center franchise-title test-h my-lg-5">{{ advantagesHeading }}</div>
+    </div>
+    <div class="row mt-5">
+      <div class="advantages-container col-lg-4" *ngFor="let item of testimonialList">
+        <div class="rounded-4 p-4">
+          <div class="test-h advantages-number">{{item.advantagesNumber}}</div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="test-h my-4 mb-3 wf-sub-text">{{item.advantagesDes}}</div>
+            <div class="test-h ms-2">
+              <img [src]="item.imgSrc" alt="image cap">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-none">
+        <div class="col-md-4">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="block-heading">
+              <p>Curriculum</p>
+            </div>
+            <p class="block-text">{{ redirectText1 }}</p>
+            <button class="block-redirect-btn btn" (click)="navigateTo('/curriculum')">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="block-heading">
+              <p>Our Activities</p>
+            </div>
+            <p class="block-text">{{ redirectText2 }}</p>
+            <button class="block-redirect-btn btn" (click)="navigateTo('/activities')">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="block-heading">
+              <p>About Us</p>
+            </div>
+            <p class="block-text">{{ redirectText3 }}</p>
+            <button class="block-redirect-btn btn" (click)="navigateTo('/about-us')">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-input-form></app-input-form>

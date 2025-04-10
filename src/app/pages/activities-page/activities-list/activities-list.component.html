@@ -1,0 +1,57 @@
+<div class="activities-list-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div
+        class="col-md-5 img_1 activity_img"
+        (click)="navigateTo('curriculum')"
+      >
+        <div class="header">
+          <!-- <h1>Curriculum</h1> -->
+          <p>{{ curriculumText }}</p>
+        </div>
+      </div>
+      <!-- <div
+        class="col-md-5 img_2 activity_img"
+        (click)="navigateTo('co-curricular')"
+      >
+        <div class="header">
+          <h1>Co-Curricular</h1>
+          <p>{{ coCurricularText }}</p>
+        </div>
+      </div> -->
+      <div class="col-md-5 img_3 activity_img" (click)="navigateTo('sports')">
+        <div class="header">
+          <h1>Sports</h1>act-img2
+          <p>{{ sportsText }}</p>
+        </div>
+      </div>
+      <div
+        class="col-md-5 img_4 activity_img"
+        (click)="navigateTo('stage-exposure')"
+      >
+        <div class="header">
+          <h1>Stage Exposure</h1>
+          <p>{{ stageExposureText }}</p>
+        </div>
+      </div>
+      <div
+        class="col-md-5 img_5 activity_img"
+        (click)="navigateTo('discovery')"
+      >
+        <div class="header">
+          <h1>Discovery</h1>
+          <p>{{ discoveryText }}</p>
+        </div>
+      </div>
+      <div class="col-md-5 img_6 activity_img" (click)="navigateTo('clubs')">
+        <div class="header">
+          <h1>Clubs</h1>
+          <p>{{ clubsText }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-overlay>
+  <app-activity-display  [activityName]="selectedActivityName" ></app-activity-display>
+</app-overlay>

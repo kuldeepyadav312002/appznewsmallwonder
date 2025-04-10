@@ -1,0 +1,23 @@
+<div class="accordion-container-block">
+  <div class="container" *ngFor="let data of accordionData">
+    <div class="accordion" id="accordionContainer">
+      <div class="card">
+        <div class="card-header" [id]="'heading' + data.id" >
+          <h5 class="mb-0">
+            <b>  {{ data.header }}</b>
+            <a class="arrow"  role="button"><i data-toggle="collapse"
+              [attr.data-target]="'#collapse' + data.id"
+              aria-expanded="true"
+              [attr.aria-controls]="'collapse' + data.id" class="fa fa-chevron-right"></i></a>
+          </h5>
+        </div>
+
+        <div [id]="'collapse' + data.id" class="collapse">
+          <div class="card-body">
+            {{ data.content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

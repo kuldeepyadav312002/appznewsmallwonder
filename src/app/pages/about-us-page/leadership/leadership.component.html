@@ -1,0 +1,29 @@
+<app-image-text-info-block
+  [title]="'LEADERSHIP'"
+  [imgSrc]="'/assets/img/more-explore-2.png'"
+  [text]="text"
+></app-image-text-info-block>
+
+<div class="directors-section">
+  <div class="container">
+    <h3>BOARD OF DIRECTORS</h3>
+    <div class="row mt-5">
+      <div *ngFor="let item of directorsInfoList" class="col-md-4">
+        <app-image-intro-card
+          [imgSrc]="item.imgSrc"
+          [title]="item.title"
+          [subTitle]="item.subTitle"
+          [content]="item.content"
+        ></app-image-intro-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-image-right-text-info-block
+  [title1]="'Lorem Ipsum'"
+  [title2]="'LOREM IPSUM'"
+  [imgSrc]="'/assets/img/girl-book.png'"
+  [text]="text"
+></app-image-right-text-info-block>
