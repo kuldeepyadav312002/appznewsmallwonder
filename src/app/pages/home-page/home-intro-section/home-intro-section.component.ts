@@ -121,16 +121,7 @@ export class HomeIntroSectionComponent implements OnInit {
     this.clickedImageUrl = getvalest;
   }
 
-  // $(document).ready(() => {
-  //   // Initialize the Slick Carousel
-  //   $('.slider').slick({
-  //     vertical: true,
-  //     autoplay: true,
-  //     autoplaySpeed: 3000,
-  //     speed: 300,
-  //   });
-  // });
-
+  
 
 
 }

@@ -12,20 +12,7 @@ export class LocationExploreComponent implements OnInit, AfterViewInit {
   @Input() title: string = "";
   @Input() locationList = [];
 
-  // slideConfig = {
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   nextArrow: "<div class='nav-btn next-slide'></div>",
-  //   prevArrow: "<div class='nav-btn prev-slide'></div>",
-  //   dots: true,
-  //   infinite: false,
-  //   responsive: [
-  //     { breakpoint: 1600, settings: { slidesToShow: 3, slidesToScroll: 1 } },
-  //     { breakpoint: 1000, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-  //     { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-  //   ],
-  // };
-
+  
   branchList = [
     {
       imgSrc: "../../../../assets/img/students/left.png",
@@ -91,30 +78,7 @@ export class LocationExploreComponent implements OnInit, AfterViewInit {
 
 
 
-    // {
-    //   imgSrc: "../../../../assets/img/two-boy.png",
-    //   title: "Small Wonders Ikigai",
-    //   address: "Yamuna Enclave",
-    //   subText: "Know More",
-    //   showArrow: "",
-    //   color: "#10112E",
-    // },
-    // {
-    //   imgSrc: "../../../../assets/img/two-boy.png",
-    //   title: "Small Wonders Ikigai",
-    //   address: "Yamuna Enclave",
-    //   subText: "Know More",
-    //   showArrow: "",
-    //   color: "#B4874C",
-    // },
-    // {
-    //   imgSrc: "../../../../assets/img/two-boy.png",
-    //   title: "Small Wonders Ikigai",
-    //   address: "Yamuna Enclave",
-    //   subText: "Know More",
-    //   showArrow: "",
-    //   color: "#772234",
-    // },
+    
   ];
 
 
@@ -125,23 +89,7 @@ export class LocationExploreComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-  //   setInterval(() => {
-  //     const elementCurrent = this.elRef.nativeElement.querySelector('.slick-current');
-  //  let slickAttribute= elementCurrent.getAttribute('data-slick-index');
-  //  let index=Number(slickAttribute)-1;
-  //  let indexPlus=Number(slickAttribute)+1;
-  //  const elementSlide = this.elRef.nativeElement.querySelector(`[data-slick-index="${index}"]`);
-  //  const elementPlus = this.elRef.nativeElement.querySelector(`[data-slick-index="${indexPlus}"]`);
-  //  elementSlide.style.marginRight="-5px";
-  //   elementSlide.style.position="relative";
-  //   elementPlus.style.marginLeft="-7px";
-  //    elementPlus.style.position="relative";
-    
-   
-
-  //   });
-
-
+  
     
   }
 

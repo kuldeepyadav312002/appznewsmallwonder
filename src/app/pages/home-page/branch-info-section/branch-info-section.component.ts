@@ -36,27 +36,6 @@ export class BranchInfoSectionComponent implements OnInit {
     this.router.navigate(["/schedule-tour"]);
   }
 
-  // slideConfig = {
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   dots: true,
-  //   centerMode: false
-  // };
-
-  // slideConfig = {
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   nextArrow: "<div class='nav-btn next-slide'></div>",
-  //   prevArrow: "<div class='nav-btn prev-slide'></div>",
-  //   dots: false,
-  //   infinite: false,
-  //   responsive: [
-  //     { breakpoint: 1600, settings: { slidesToShow: 3, slidesToScroll: 1 } },
-  //     { breakpoint: 1000, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-  //     { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-  //   ],
-  // };
-
   branchList = [
     {
       imgSrc: "../../../../assets/img/students/left.png",
@@ -110,30 +89,7 @@ export class BranchInfoSectionComponent implements OnInit {
 
 
 
-    // {
-    //   imgSrc: "../../../../assets/img/two-boy.png",
-    //   title: "Small Wonders Ikigai",
-    //   address: "Yamuna Enclave",
-    //   subText: "Know More",
-    //   showArrow: "",
-    //   color: "#10112E",
-    // },
-    // {
-    //   imgSrc: "../../../../assets/img/two-boy.png",
-    //   title: "Small Wonders Ikigai",
-    //   address: "Yamuna Enclave",
-    //   subText: "Know More",
-    //   showArrow: "",
-    //   color: "#B4874C",
-    // },
-    // {
-    //   imgSrc: "../../../../assets/img/two-boy.png",
-    //   title: "Small Wonders Ikigai",
-    //   address: "Yamuna Enclave",
-    //   subText: "Know More",
-    //   showArrow: "",
-    //   color: "#772234",
-    // },
+    
   ];
 
   // $('.slider-for').slick({

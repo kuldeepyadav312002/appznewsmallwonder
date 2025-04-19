@@ -55,10 +55,7 @@
             </a>
           </div>
         </div>
-        <!-- <div class="curi-icon">
-          <button class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-          <button class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-        </div> -->
+        
       </div>
     </div>
   </div>
@@ -96,62 +93,6 @@
         </div>
       </div>
 
-      <!-- <div class="home-curr-section">
-  <div class="container">
-    <div class="title_sec">
-      <p>
-        {{ titleIntro }}
-      </p>
-      <h3>{{ title }}</h3>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-10" *ngIf="type == 'curriculum'">
-        <ngx-slick-carousel
-          class="carousel"
-          #slickModal="slick-carousel"
-          [config]="slideConfig"
-          (init)="slickInit($event)"
-          (breakpoint)="breakpoint($event)"
-          (afterChange)="afterChange($event)"
-          (beforeChange)="beforeChange($event)"
-        >
-          <div ngxSlickItem *ngFor="let item of displayList" class="slide">
-            <app-carousel-info-card
-              [imgSrc]="item.imgSrc"
-              [title]="item.title"
-              [content]="item.content"
-              [ageInterval]="item.ageInterval"
-              [routePath]="item.routePath"
-            ></app-carousel-info-card>
-          </div>
-        </ngx-slick-carousel>
-      </div>
-
-      <div class="col-lg-10" *ngIf="type == 'events-and-gallery'">
-
-        <ngx-slick-carousel
-          class="carousel"
-          #slickModal="slick-carousel"
-          [config]="slideConfig"
-          (init)="slickInit($event)"
-          (breakpoint)="breakpoint($event)"
-          (afterChange)="afterChange($event)"
-          (beforeChange)="beforeChange($event)"
-        >
-          <div ngxSlickItem *ngFor="let item of displayList" class="slide">
-            <app-carousel-info-card-event
-              [title]="item.title"
-              [content]="item.content"
-              [date]="item.date"
-              [numComments]="item.numComments"
-              [imgSrc]="item.imgSrc"
-            ></app-carousel-info-card-event>
-          </div>
-        </ngx-slick-carousel>
-      </div>
-    </div>
-  </div>
-</div> -->
-    </div>
+        </div>
   </div>
 </section>

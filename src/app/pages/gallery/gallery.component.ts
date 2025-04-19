@@ -61,14 +61,7 @@ export class GalleryComponent implements OnInit {
       imageSrc: '/assets/image/Rectangle-3.png',
       imageAlt: '10'
     },
-    // {
-    //   imageSrc: 'https://images.unsplash.com/photo-1470770903676-69b98201ea1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-    //   imageAlt: '11'
-    // },
-    // {
-    //   imageSrc: 'https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-    //   imageAlt: '12'
-    // }
+    
   ]
 
   previewImage: boolean=false;

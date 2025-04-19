@@ -50,14 +50,6 @@ export class BooksAndBeyondPageComponent implements OnInit {
     }
   ];
 
-  // daySectionTitle: string = "Day at Small Wonders";
-  //
-  // daySectionContent: string = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-  // sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-  // consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  // Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-  // sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`;
-
   childrenLearnSectionTitle: string = "What children will learn at Small wonders";
   childrenLearnSectionContent = [
     {

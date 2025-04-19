@@ -187,18 +187,6 @@ textarea.error {
   // background-color: #f6f2ef;
   background-position: top right;
 }
-// .contact-bg{
-//   background-image: url("../../../../assets/image/contacsm.jpg");
-//   height: 500px !important;
-//   width: 100% !important;
-// }
-
-// .hom-ch{
-//   text-align: center !important;
-//   color: #ffffff !important;
-//   font-size: 55px;
-//   font-weight: 700;
-// }
 
 .form-bg-1 {
   border-radius: 0 !important;
@@ -289,21 +277,6 @@ textarea.error {
   border-bottom-left-radius: 25px !important;
   opacity: 0.8;
 }
-
-// .contact-form:before {
-//   content: ' ';
-//   display: block;
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   width: 100%;
-//   height: 522px;
-//   opacity: 0.5;
-//   background: black;
-//   // background-repeat: no-repeat;
-//   background-position: 50% 0;
-//   background-size: cover;
-// }
 
 .contact-content {
   // margin-top: 5rem;
@@ -535,9 +508,6 @@ textarea {
   label {
     width: 40%;
   }
-.hii{
-  margin-left: 62px;
-}
   input,
   textarea {
     width: 60%;
@@ -547,19 +517,50 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 700px) {
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 480px) {
+  textarea {
+    margin-left: 20px;
+    width: 80%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+  }
+  .hii {
+    margin-left: 57px;
+  }
+}
 
+/* Smartphones (landscape) to tablets */
+@media only screen and (min-width: 481px) and (max-width: 967px) {
+  textarea {
+    margin-left: 30px;
+    width: 70%;
+  }
+  .hii {
+    margin-left: 71px;
+  }
+}
+
+/* Tablets to small laptops */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  textarea {
+    margin-left: 50px;
+    width: 60%;
+  }
+  .hii {
+    margin-left: 18px;
+  }
+}
+
+/* Laptops and desktops */
+@media only screen and (min-width: 1025px) {
   textarea {
     margin-left: 58px;
-    position: relative;
     width: 50%;
-    height: 30px;
-    background: transparent !important;
-    border-bottom: 1px solid white;
-    border-top: transparent !important;
-    border-right: transparent !important;
-    border-left: transparent !important;
   }
-  
-  
+  .hii {
+    margin-left: 20px;
+  }
 }
